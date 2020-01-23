@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <form action="/upload" method="POST" class="form" enctype="multipart/form-data">
+        <label for="file">Choose a file</label>
+        <input type="file" name="file" id="file" accept=".tif">
+
+        <label for="VAR_LOGICAL_IDENTIFIER">logical identifier</label>
+        <input type="text" name="VAR_LOGICAL_IDENTIFIER" id="VAR_LOGICAL_IDENTIFIER">
+
+        <label for="VAR_TITLE">title</label>
+        <input type="text" name="VAR_TITLE" id="VAR_TITLE">
+
+        <label for="VAR_TARGET_TYPE">target_type</label>
+        <input type="text" name="VAR_TARGET_TYPE" id="VAR_TARGET_TYPE">
+
+        <label for="VAR_TARGET">target</label>
+        <input type="text" name="VAR_TARGET" id="VAR_TARGET">
+
+        <label for="VAR_OBSERVING_SYSTEM_NAME">observing_system_name</label>
+        <input type="text" name="VAR_OBSERVING_SYSTEM_NAME" id="VAR_OBSERVING_SYSTEM_NAME">
+
+        <label for="VAR_INVESTIGATION_AREA_NAME">investigation_area_name</label>
+        <input type="text" name="VAR_INVESTIGATION_AREA_NAME" id="VAR_INVESTIGATION_AREA_NAME">
+
+        <label for="VAR_INVESTIGATION_AREA_LID_REFERENCE">investigation_area_lid_reference</label>
+        <input type="text" name="VAR_INVESTIGATION_AREA_LID_REFERENCE" id="VAR_INVESTIGATION_AREA_LID_REFERENCE">
+
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+{% endblock %}

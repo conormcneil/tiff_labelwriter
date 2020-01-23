@@ -1,0 +1,29 @@
+header {
+    margin: 0;
+    padding: 0.3em;
+    background: #aeaeae;
+    width: 100vw;
+    height: 3em;
+}
+
+.messages {
+    background: #bebebe;
+}
+.message {
+    font-size:0.8em;
+    margin-left:1em;
+}
+
+.form {
+    margin:3em auto;
+    padding:1em 3em;
+    border-radius:0.3em;
+    background:#dedede;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.form input[type="submit"] {
+    margin-top: 1em;
+    width: auto;
+}
