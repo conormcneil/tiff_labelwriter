@@ -19,9 +19,6 @@ class UploadManager():
             self.fullpath = path.join(self.get_uploadfolder(), file.filename)
             self.srcpath = path.join(self.get_uploadfolder(), self.get_srcpath())
 
-    def set_file(self,file):
-        self.__init__(file)
-    
     def get_file(self):
         return self.file
     
